@@ -175,7 +175,7 @@ header .wrapper {
     background: white;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
 
-    background-image: url(/img/learn-more-arrow.svg);
+    background-image: url(img/learn-more-arrow.svg);
 	background-position: 85% center;
     background-repeat: no-repeat;
     transition: 0.3s ease;
@@ -205,7 +205,7 @@ header .wrapper {
     min-height: 464px;
     /* z-index: 2; */
 
-	background-image: url(/img/headline-image.svg);
+	background-image: url(img/headline-image.svg);
 	background-repeat: no-repeat;
 	background-position: 75% 80%;
 }
@@ -257,7 +257,7 @@ header .wrapper {
     background-color: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
 
-    background-image: url(/img/explanation-image.svg);
+    background-image: url(img/explanation-image.svg);
 	background-repeat: no-repeat;
 	background-position: 0% 0%;
 }
@@ -295,25 +295,25 @@ header .wrapper {
 }
 
 .first-card{
-    background-image: url(/img/first-card-image.svg);
+    background-image: url(img/first-card-image.svg);
     background-repeat: no-repeat;
     background-position: center;   
 }
 
 .second-card{
-    background-image: url(/img/second-card-image.svg);
+    background-image: url(img/second-card-image.svg);
     background-repeat: no-repeat;
     background-position: center; 
 }
 
 .third-card{
-    background-image: url(/img/third-card-image.svg);
+    background-image: url(img/third-card-image.svg);
     background-repeat: no-repeat;
     background-position: center;  
 }
 
 .fourth-card {
-    background-image: url(/img/fourth-card-image.svg);
+    background-image: url(img/fourth-card-image.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -327,7 +327,7 @@ header .wrapper {
     
     background: transparent;
 
-    background-image: url(/img/learn-more-arrow.svg);
+    background-image: url(img/learn-more-arrow.svg);
 	background-position: 85% center;
 	background-repeat: no-repeat;
 }
@@ -539,7 +539,7 @@ header .wrapper {
     margin-bottom: 67px;
     padding-left: 65px;
     padding-bottom: 10px;
-    background-image: url(/img/logo.svg);
+    background-image: url(img/logo.svg);
     background-repeat: no-repeat;
     background-position: 0% center;
 }
