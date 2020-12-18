@@ -175,7 +175,7 @@ header .wrapper {
     background: white;
     box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
 
-    background-image: url(img/learn-more-arrow.svg);
+    background-image: url(./img/learn-more-arrow.svg);
 	background-position: 85% center;
     background-repeat: no-repeat;
     transition: 0.3s ease;
@@ -205,7 +205,7 @@ header .wrapper {
     min-height: 464px;
     /* z-index: 2; */
 
-	background-image: url(img/headline-image.svg);
+	background-image: url(./img/headline-image.svg);
 	background-repeat: no-repeat;
 	background-position: 75% 80%;
 }
