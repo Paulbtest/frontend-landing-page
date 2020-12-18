@@ -1,0 +1,616 @@
+/* Font properties start */
+@font-face {
+ font-family: 'Avenir-Heavy';
+ src: url('/fonts/Avenir-Heavy.woff2') format("woff2"),
+    url('/fonts/Avenir-Heavy.woff') format("woff"),
+    url('/fonts/Avenir-Heavy.ttf') format("ttf");
+}
+
+@font-face{
+    font-family: 'Avenir-Medium';
+    src: url('/fonts/Avenir-Medium.woff2') format("woff2"),
+    url('/fonts/Avenir-Medium.woff') format("woff"),
+    url('/fonts/Avenir-Medium.ttf') format("ttf");
+}
+
+@font-face {
+  font-family: "Avenir-Book";
+  src: url('/fonts/Avenir-Book.ttf'),
+    url('/fonts/Avenir-Book.woff') format("woff"), 
+    url('/fonts/Avenir-Book.woff2') format("woff2"); 
+}
+
+@font-face{
+    font-family: 'Avenir-Roman';
+    src: url('/fonts/Avenir-Roman.woff2') format("woff2"),
+    url('/fonts/Avenir-Roman.woff') format("woff"),
+    url('/fonts/Avenir-Roman.ttf') format("ttf");
+}
+
+@font-face {
+  font-family: "Helvetica-Bold";
+  src: url('/fonts/Helvetica-Bold.ttf'),
+    url('/fonts/Helvetica-Bold.woff') format("woff"), 
+    url('/fonts/Helvetica-Bold.woff2') format("woff2"); 
+}
+
+@font-face {
+  font-family: "Helvetica-Regular";
+
+  src: url("./fonts/9202.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/9202.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/9202.woff2") format("woff2"); /* Modern Browsers */
+}
+/* Font properties end */
+
+/* Common properties start  */
+body {
+    background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%);
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 1120px;
+    margin: auto;
+}
+
+
+ul {
+    list-style-type: none;
+	margin: 0;
+    padding: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+h1 {
+    font-family: "Helvetica-Bold", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: rgba(33, 35, 83, 1);
+    line-height: 110%;
+    width: 645px;
+}
+
+h2 {
+    font-family: "Helvetica-Bold", sans-serif;
+    font-size: 40px;
+    font-weight: 700px;
+    color: rgba(33, 35, 83, 1);
+}
+
+h3 {
+    font-family: "Helvetica-Regular", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(33, 35, 83, 1);
+}
+
+h4 {
+    font-family: "Avenir-Medium", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: rgba(33, 35, 83, 1);
+}
+
+h5 {
+    font-family: "Avenir-Heavy", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    padding-bottom: 25px;
+}
+
+h6 {
+    font-family: "Avenir-Medium", sans-serif;
+    color: rgba(156, 105, 226, 1);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+p, article {
+    font-family: "Avenir-Medium", sans-serif;
+    font-size: 18px;
+    color: rgba(75, 93, 104, 1);
+}
+
+/* Common properties end  */
+
+
+.link {
+    font-family: "Avenir-Medium", sans-serif;
+    font-weight: 500;
+    color: rgba(75, 93, 104, 1);
+    transition: 0.3s ease;
+}
+
+.link:hover{
+    color: rgb(127, 180, 212);
+    transition: 0.3s ease;
+}
+
+.link:active {
+    color: rgb(10, 152, 240);
+    transition: 0.3s ease;
+}
+
+.font-heavy {
+    font-family: "Avenir-Heavy", sans-serif;
+    font-weight: 800;
+    color: rgba(33, 35, 83, 1); 
+}
+
+
+/* Header start  */
+header .wrapper {
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 30px 0 130px;
+}
+
+.main-menu {
+    display: flex;
+
+	transition: all 0.25s;
+}
+
+.main-menu a {
+	margin-right: 30px;
+    line-height: 150%;
+    
+	transition: all 0.25s;
+}
+
+.btn-demo {
+	padding: 17px 69px 17px 29px;
+    font-size: 16px;
+	border-radius: 50px;
+  
+    
+    background: white;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+
+    background-image: url(/img/learn-more-arrow.svg);
+	background-position: 85% center;
+    background-repeat: no-repeat;
+    transition: 0.3s ease;
+}
+
+.btn-demo:hover{
+    box-shadow: 0 0 5px 2px rgba(156, 105, 226, 0.7);
+    transition: 0.3s ease;
+}
+
+.btn-demo:active {
+    background-color: rgb(222, 200, 252);
+    transition: 0.3s ease;
+    color: white;
+}
+
+.logo {
+    margin-right: -35%; /* Workaround */
+}
+
+/* Header end */
+
+/* Headline start */
+
+.headline {
+	position: relative;
+    min-height: 464px;
+    /* z-index: 2; */
+
+	background-image: url(/img/headline-image.svg);
+	background-repeat: no-repeat;
+	background-position: 75% 80%;
+}
+
+.headline-content {
+    flex-direction: column;
+    width: 380px;
+}
+
+.btn-link {
+    margin: 50px 0 200px;
+}
+
+.btn-learn-more {
+    font-size: 18px;
+    padding: 16px 37px;
+    border-radius: 50px;
+    
+    background: rgba(156, 105, 226, 1);
+    color: white;
+}
+
+.btn-learn-more:hover {
+    box-shadow: 0 0 5px 2px rgba(156, 105, 226, 0.7);
+    transition: 0.3s ease;
+}
+
+.btn-learn-more:active {
+    background-color: rgba(240, 99, 184, 1);
+    transition: 0.3s ease;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Headline end */
+
+/** Explanation start **/
+.explanation {
+	/* position: relative;
+	z-index: 1; */
+    
+    margin-top: 30px;
+    margin-bottom: 120px;
+    padding: 95px 92px 95px 550px;
+    
+    background-color: rgba(240, 99, 184, 0.15);
+    border-radius: 50px;
+
+    background-image: url(/img/explanation-image.svg);
+	background-repeat: no-repeat;
+	background-position: 0% 0%;
+}
+/* Explanation end */
+
+/** Features start **/
+.features {
+    text-align: center;
+}
+
+.test-p {
+    text-align: center;
+    width: 584px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+.features-cards {
+    display: flex;
+    flex-wrap: wrap;
+     margin: -10px;         /*workaround */
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Cards start */
+
+.first-card, .second-card, .third-card, .fourth-card {
+    width: 220px;
+    height: 160px;
+    padding: 79px 50px 130px 260px;
+    margin: 20px;  
+}
+
+.first-card{
+    background-image: url(/img/first-card-image.svg);
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+.second-card{
+    background-image: url(/img/second-card-image.svg);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.third-card{
+    background-image: url(/img/third-card-image.svg);
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.fourth-card {
+    background-image: url(/img/fourth-card-image.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-card {
+    padding: 17px 69px 17px 0;
+    margin-left: 0;
+    font-size: 16px;
+	border-radius: 50px;
+  
+    
+    background: transparent;
+
+    background-image: url(/img/learn-more-arrow.svg);
+	background-position: 85% center;
+	background-repeat: no-repeat;
+}
+
+.btn-card:hover {
+    color: rgba(156, 105, 226, 1);
+    transition: 0.3s ease;
+}
+
+.btn-card:active {
+    color: rgba(240, 99, 184, 1);
+    transition: 0.3s ease;
+}
+
+.text-card {
+    font-family: "Avenir-Book", sans-serif;
+    font-size: 16px;
+    color: rgba(75, 93, 104, 1);
+    min-height: 140px;
+}
+
+/* Testimonials start */
+.slidewhow-heading{
+    color: white;
+    margin-left: 60px;
+}
+
+.slideshow-container {
+    margin-top: 130px;
+    margin-bottom: 220px;
+    background-color: rgba(156, 105, 226, 1);
+    border-radius: 50px;
+    padding: 50px;
+}
+
+.controls-container {
+    display: flex;
+    flex-direction: row-reverse;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.dots {
+    margin-right:auto
+}
+
+
+.testimonials-card {
+    background-color: #ffff;
+    display: none;
+    border-radius: 20px;
+    margin: 60px;
+    padding: 20px;
+    padding-left: 190px;
+    padding-top: 60px;
+    width: 640px;
+    transition: 0.3s ease;
+    box-shadow: 0px 15px 5px rgba(69, 33, 83, 0.5);
+    
+}
+
+.dots {
+    margin-right:auto
+}
+
+.testimonials-card:hover {
+    box-shadow: 5px 5px 5px rgba(240, 99, 184, 0.4);
+    transition: 0.3s ease;
+}
+
+ .testimonials-card:active {
+        background-color: rgb(222, 200, 252);
+        transition: 0.3s ease;
+}
+
+.testimonials-text{
+    width: 350px;
+    height: 200px;
+    font-family: "Avenir-Roman", sans-serif;
+}
+
+.first-testimonial {
+    background-image: url(img/john.png);
+    background-position: 10% 20%;
+	background-repeat: no-repeat;
+}
+
+.second-testimonial {
+    background-image: url(img/jeny.png);
+    background-position: 10% 20%;
+	background-repeat: no-repeat;
+}
+
+.third-testimonial {
+    background-image: url(img/william.png);
+    background-position: 10% 20%;
+	background-repeat: no-repeat;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    transition: 0.6s ease;
+    color: white;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color:rgba(240, 99, 184, 1);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 5px;
+  width:  5px;
+  margin: 0 2px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  height: 10px;
+  width:  10px;
+  background-color:rgba(240, 99, 184, 1);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.0s;
+  animation-name: fade;
+  animation-duration: 1.0s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* Testimonials end */
+
+
+/* Trial start */
+.btn-trial {
+    background-color: rgba(240, 99, 184, 1);
+    margin-right: 30px;
+    transition: 0.6s ease; 
+}
+
+.btn-trial:active {
+    background-color: #fff;
+    color: rgba(240, 99, 184, 1);
+    transition: 0.6s ease; 
+}
+
+.flex-trial {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+    margin-bottom: 150px;
+}
+/* Trial end */
+
+/* Footer start */
+.flex-footer {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bottom-logo {
+    font-size: 20px;
+    margin-bottom: 67px;
+    padding-left: 65px;
+    padding-bottom: 10px;
+    background-image: url(/img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: 0% center;
+}
+
+.address {
+    width: 300px;
+    height: 65px;
+    font-family: "Avenir-Medium", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color:rgba(33, 35, 83, 1);
+}
+
+.contact-number {
+    font-weight: 400;
+    width: 205px;
+}
+
+
+.flex-footer ul>li {
+    font-family: "Avenir-medium", sans-serif;
+    font-size: 16px;
+    color:rgba(33, 35, 83, 1);
+    margin-top: 30px;
+}
+
+.contacts-color {
+    color:rgba(33, 35, 83, 1);
+    font-weight: 400;
+}
+
+.contact-buttons {
+    padding-right: 7px;
+} 
+
+.contact-buttons:hover {
+    filter:invert(25%);
+    transition: 0.6s ease;
+}
+
+.contact-buttons:active {
+    filter: contrast(100%) brightness(3%);
+    transition: 0.6s ease;
+}
+
+/* Lower footer */
+.flex-contacts {
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+    align-items: center;
+    margin-top: 58px;
+    margin-bottom: 96px;
+}
+
+.lower-footer-text {
+    width: 360px;
+    font-size: 12px;
+}
+
+.btn-contact-us:hover {
+    transition: 0.6s ease;
+}
+
+.btn-contact-us:hover {
+    filter:sepia(60%);
+    transition: 0.6s ease;
+}
+
+.btn-contact-us:active {
+    filter:sepia(90%);
+    transition: 0.6s ease;
+}
+/* Footer end */
