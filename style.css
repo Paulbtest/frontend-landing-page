@@ -247,12 +247,9 @@ header .wrapper {
 
 /** Explanation start **/
 .explanation {
-	/* position: relative;
-	z-index: 1; */
-    
     margin-top: 30px;
     margin-bottom: 120px;
-    padding: 95px 92px 95px 550px;
+    padding: 95px 125px 125px 550px;
     
     background-color: rgba(240, 99, 184, 0.15);
     border-radius: 50px;
